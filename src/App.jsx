@@ -10,12 +10,13 @@ import CheckAppointment from './pages/CheckAppointment'
 function App() {
   return (
     <Routes>
-      {/* <Route path="/" element={<HospitalHomepage />} /> */}
+      <Route path="/" element={<HospitalHomepage />} />
       <Route path="/services" element={<ServicesPage />} />
       <Route path="/departments" element={<ViewDepartment />} />
       <Route path="/add-department" element={<AddDepartment />} />
       <Route path="/bed-management" element={<BedManagement />} />
       <Route path="/check-appointment" element={<CheckAppointment />} />
+      <Route path='/view-department' element={<ViewDepartment/>} />
     </Routes>
   )
 }
