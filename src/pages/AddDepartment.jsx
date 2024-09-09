@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaBuilding, FaUserMd } from "react-icons/fa";
 
 const AddDepartment = () => {

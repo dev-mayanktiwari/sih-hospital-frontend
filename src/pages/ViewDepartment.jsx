@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 const DepartmentManagement = () => {
@@ -26,6 +26,7 @@ const DepartmentManagement = () => {
           setError("Unexpected data format from server");
         }
       } catch (err) {
+        console.log("Error while fetching dept", err);
         setError("An error occurred while fetching department data");
       } finally {
         setIsLoading(false);
