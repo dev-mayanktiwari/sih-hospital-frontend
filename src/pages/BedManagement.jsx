@@ -28,6 +28,7 @@ const BedManagement = () => {
                     setIsLoading(false);
                 }
             } catch (err) {
+                console.log("Error in getting bed details", err);
                 setError('An error occurred while fetching bed data');
                 setIsLoading(false);
             }
